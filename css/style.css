@@ -1,3 +1,62 @@
 h1{
     color:red;
 }
+
+.container {
+    background-color: aliceblue;
+    display:flex;
+    justify-content:center;
+}
+
+#leftContainer {
+    display:flex;
+    justify-content: center;
+}
+
+#leftTeamLeft {
+    flex:30%;
+}
+
+#rightContainer {
+    display:flex;
+    justify-content: center;
+}
+
+#rightTeamLeft {
+    flex:30%;
+}
+
+card {
+    display:block;
+    background-color: red;
+    height: 20vh;
+    width: 21vw;
+    margin:1vw;
+    overflow-y:auto;
+}
+
+.emptyArea {
+    width: 20vw;
+    height: 19vh;
+    resize:none;
+    background: none;
+    border:none;
+}
+
+.rndCard {
+    display:flex;
+    justify-content:center;
+}
+
+h2 {
+    font-size:2vh;
+}
+
+.numberInput {
+    width:3vw;
+    height:50px;
+    margin-right:5px;
+    font-size:4vh;
+    
+}
+

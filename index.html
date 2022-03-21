@@ -7,6 +7,265 @@
 </head>
 <body>
     <h1>Warhammer 40K</h1>
+    <div id="container" class="container">
+        <div id="leftTeam" class="leftTeam">
+            <label for="team" name="team" id="leftTeamLabel">Team 1:</label><input id="leftTeamName" type="text">
+            <div id="leftContainer">
+                <div id="leftTeamLeft">
+                    <label for="sec1LeftSelect" name="sec1Left" id="sec1LeftLabel">1st secondary:</label><br>
+                    <label for="sec2LeftSelect" name="sec2Left" id="sec2LeftLabel">2nd secondary:</label><br>
+                    <label for="sec3LeftSelect" name="sec3Left" id="sec3LeftLabel">3rd secondary:</label>
+                </div>
+                <div id="leftTeamRight">
+                    <select id="sec1LeftSelect">
+                        <optgroup label="Purge the enemy">
+                            <option>ASSASSINATION</option>
+                            <option>BRING IT DOWN</option>
+                            <option>TITAN HUNTER</option>
+                            <option>FOR THE EMPEROR! (Astra Militarum)</option>
+                        </optgroup>
+                        <optgroup label="No mercy, no respite">
+                            <option>NO PRISONERS</option>
+                            <option>GRIND THEM DOWN</option>
+                            <option>TO THE LAST</option>
+                            <option>PATH OF DESTRUCTION (Chaos Knights)</option>
+                            <option>SYNAPTIC INSIGHT (Tyranids)</option>
+                            <option>THE LONG WAR (Chaos Space Marines)</option>
+                            <option>MALEFIC TERROR (Chaos Daemons)</option>
+                        </optgroup>
+                        <optgroup label="Warpcraft">
+                            <option>ABHOR THE WITCH</option>
+                            <option>WARP RITUAL</option>
+                            <option>PIERCE THE VEIL</option>
+                            <option>PSYCHIC INTERROGATION</option>
+                        </optgroup>
+                        <optgroup label="Shadow operations">
+                            <option>RAISE THE BANNERS HIGH</option>
+                            <option>INVESTIGATE SIGNAL</option>
+                            <option>RETRIEVE NACHMUND DATA</option>
+                            <option>DEPLOY TELEPORT HOMERS</option>
+                        </optgroup>
+                        <optgroup label="Battlefield supremacy">
+                            <option>BEHIND ENEMY LINES</option>
+                            <option>ENGAGE ON ALL FRONTS</option>
+                            <option>STRANGLEHOLD</option>
+                            <option>YIELD NO GROUND (Imperial Knights)</option>
+                        </optgroup>
+                        <optgroup label="mission or faction specific">
+                            <option>EMPTY</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <select id="sec2LeftSelect">
+                        <optgroup label="Purge the enemy">
+                            <option>ASSASSINATION</option>
+                            <option>BRING IT DOWN</option>
+                            <option>TITAN HUNTER</option>
+                            <option>FOR THE EMPEROR! (Astra Militarum)</option>
+                        </optgroup>
+                        <optgroup label="No mercy, no respite">
+                            <option>NO PRISONERS</option>
+                            <option>GRIND THEM DOWN</option>
+                            <option>TO THE LAST</option>
+                            <option>PATH OF DESTRUCTION (Chaos Knights)</option>
+                            <option>SYNAPTIC INSIGHT (Tyranids)</option>
+                            <option>THE LONG WAR (Chaos Space Marines)</option>
+                            <option>MALEFIC TERROR (Chaos Daemons)</option>
+                        </optgroup>
+                        <optgroup label="Warpcraft">
+                            <option>ABHOR THE WITCH</option>
+                            <option>WARP RITUAL</option>
+                            <option>PIERCE THE VEIL</option>
+                            <option>PSYCHIC INTERROGATION</option>
+                        </optgroup>
+                        <optgroup label="Shadow operations">
+                            <option>RAISE THE BANNERS HIGH</option>
+                            <option>INVESTIGATE SIGNAL</option>
+                            <option>RETRIEVE NACHMUND DATA</option>
+                            <option>DEPLOY TELEPORT HOMERS</option>
+                        </optgroup>
+                        <optgroup label="Battlefield supremacy">
+                            <option>BEHIND ENEMY LINES</option>
+                            <option>ENGAGE ON ALL FRONTS</option>
+                            <option>STRANGLEHOLD</option>
+                            <option>YIELD NO GROUND (Imperial Knights)</option>
+                        </optgroup>
+                        <optgroup label="mission or faction specific">
+                            <option>EMPTY</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <select id="sec3LeftSelect">
+                        <optgroup label="Purge the enemy">
+                            <option>ASSASSINATION</option>
+                            <option>BRING IT DOWN</option>
+                            <option>TITAN HUNTER</option>
+                            <option>FOR THE EMPEROR! (Astra Militarum)</option>
+                        </optgroup>
+                        <optgroup label="No mercy, no respite">
+                            <option>NO PRISONERS</option>
+                            <option>GRIND THEM DOWN</option>
+                            <option>TO THE LAST</option>
+                            <option>PATH OF DESTRUCTION (Chaos Knights)</option>
+                            <option>SYNAPTIC INSIGHT (Tyranids)</option>
+                            <option>THE LONG WAR (Chaos Space Marines)</option>
+                            <option>MALEFIC TERROR (Chaos Daemons)</option>
+                        </optgroup>
+                        <optgroup label="Warpcraft">
+                            <option>ABHOR THE WITCH</option>
+                            <option>WARP RITUAL</option>
+                            <option>PIERCE THE VEIL</option>
+                            <option>PSYCHIC INTERROGATION</option>
+                        </optgroup>
+                        <optgroup label="Shadow operations">
+                            <option>RAISE THE BANNERS HIGH</option>
+                            <option>INVESTIGATE SIGNAL</option>
+                            <option>RETRIEVE NACHMUND DATA</option>
+                            <option>DEPLOY TELEPORT HOMERS</option>
+                        </optgroup>
+                        <optgroup label="Battlefield supremacy">
+                            <option>BEHIND ENEMY LINES</option>
+                            <option>ENGAGE ON ALL FRONTS</option>
+                            <option>STRANGLEHOLD</option>
+                            <option>YIELD NO GROUND (Imperial Knights)</option>
+                        </optgroup>
+                        <optgroup label="mission or faction specific">
+                            <option>EMPTY</option>
+                        </optgroup>
+                    </select>
+                </div> 
+            </div>
+        </div>
+        <div id="rightTeam" class="rightTeam">
+            <label for="team" name="team" id="rightTeamLabel">Team 2:</label><input id="rightTeamName" type="text">
+            <div id="rightContainer">
+                <div id="rightTeamLeft">
+                    <label for="sec1Right" name="sec1Right" id="sec1RightLabel">1st secondary:</label><br>
+                    <label for="sec2Right" name="sec2Right" id="sec2RightLabel">2nd secondary:</label><br>
+                    <label for="sec3Right" name="sec3Right" id="sec3RightLabel">3rd secondary:</label>
+                </div>
+                <div id="rightTeamRight">
+                    <select id="sec1RightSelect">
+                        <optgroup label="Purge the enemy">
+                            <option>ASSASSINATION</option>
+                            <option>BRING IT DOWN</option>
+                            <option>TITAN HUNTER</option>
+                            <option>FOR THE EMPEROR! (Astra Militarum)</option>
+                        </optgroup>
+                        <optgroup label="No mercy, no respite">
+                            <option>NO PRISONERS</option>
+                            <option>GRIND THEM DOWN</option>
+                            <option>TO THE LAST</option>
+                            <option>PATH OF DESTRUCTION (Chaos Knights)</option>
+                            <option>SYNAPTIC INSIGHT (Tyranids)</option>
+                            <option>THE LONG WAR (Chaos Space Marines)</option>
+                            <option>MALEFIC TERROR (Chaos Daemons)</option>
+                        </optgroup>
+                        <optgroup label="Warpcraft">
+                            <option>ABHOR THE WITCH</option>
+                            <option>WARP RITUAL</option>
+                            <option>PIERCE THE VEIL</option>
+                            <option>PSYCHIC INTERROGATION</option>
+                        </optgroup>
+                        <optgroup label="Shadow operations">
+                            <option>RAISE THE BANNERS HIGH</option>
+                            <option>INVESTIGATE SIGNAL</option>
+                            <option>RETRIEVE NACHMUND DATA</option>
+                            <option>DEPLOY TELEPORT HOMERS</option>
+                        </optgroup>
+                        <optgroup label="Battlefield supremacy">
+                            <option>BEHIND ENEMY LINES</option>
+                            <option>ENGAGE ON ALL FRONTS</option>
+                            <option>STRANGLEHOLD</option>
+                            <option>YIELD NO GROUND (Imperial Knights)</option>
+                        </optgroup>
+                        <optgroup label="mission or faction specific">
+                            <option>EMPTY</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <select id="sec2RightSelect">
+                        <optgroup label="Purge the enemy">
+                            <option>ASSASSINATION</option>
+                            <option>BRING IT DOWN</option>
+                            <option>TITAN HUNTER</option>
+                            <option>FOR THE EMPEROR! (Astra Militarum)</option>
+                        </optgroup>
+                        <optgroup label="No mercy, no respite">
+                            <option>NO PRISONERS</option>
+                            <option>GRIND THEM DOWN</option>
+                            <option>TO THE LAST</option>
+                            <option>PATH OF DESTRUCTION (Chaos Knights)</option>
+                            <option>SYNAPTIC INSIGHT (Tyranids)</option>
+                            <option>THE LONG WAR (Chaos Space Marines)</option>
+                            <option>MALEFIC TERROR (Chaos Daemons)</option>
+                        </optgroup>
+                        <optgroup label="Warpcraft">
+                            <option>ABHOR THE WITCH</option>
+                            <option>WARP RITUAL</option>
+                            <option>PIERCE THE VEIL</option>
+                            <option>PSYCHIC INTERROGATION</option>
+                        </optgroup>
+                        <optgroup label="Shadow operations">
+                            <option>RAISE THE BANNERS HIGH</option>
+                            <option>INVESTIGATE SIGNAL</option>
+                            <option>RETRIEVE NACHMUND DATA</option>
+                            <option>DEPLOY TELEPORT HOMERS</option>
+                        </optgroup>
+                        <optgroup label="Battlefield supremacy">
+                            <option>BEHIND ENEMY LINES</option>
+                            <option>ENGAGE ON ALL FRONTS</option>
+                            <option>STRANGLEHOLD</option>
+                            <option>YIELD NO GROUND (Imperial Knights)</option>
+                        </optgroup>
+                        <optgroup label="mission or faction specific">
+                            <option>EMPTY</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <select id="sec3RightSelect">
+                        <optgroup label="Purge the enemy">
+                            <option>ASSASSINATION</option>
+                            <option>BRING IT DOWN</option>
+                            <option>TITAN HUNTER</option>
+                            <option>FOR THE EMPEROR! (Astra Militarum)</option>
+                        </optgroup>
+                        <optgroup label="No mercy, no respite">
+                            <option>NO PRISONERS</option>
+                            <option>GRIND THEM DOWN</option>
+                            <option>TO THE LAST</option>
+                            <option>PATH OF DESTRUCTION (Chaos Knights)</option>
+                            <option>SYNAPTIC INSIGHT (Tyranids)</option>
+                            <option>THE LONG WAR (Chaos Space Marines)</option>
+                            <option>MALEFIC TERROR (Chaos Daemons)</option>
+                        </optgroup>
+                        <optgroup label="Warpcraft">
+                            <option>ABHOR THE WITCH</option>
+                            <option>WARP RITUAL</option>
+                            <option>PIERCE THE VEIL</option>
+                            <option>PSYCHIC INTERROGATION</option>
+                        </optgroup>
+                        <optgroup label="Shadow operations">
+                            <option>RAISE THE BANNERS HIGH</option>
+                            <option>INVESTIGATE SIGNAL</option>
+                            <option>RETRIEVE NACHMUND DATA</option>
+                            <option>DEPLOY TELEPORT HOMERS</option>
+                        </optgroup>
+                        <optgroup label="Battlefield supremacy">
+                            <option>BEHIND ENEMY LINES</option>
+                            <option>ENGAGE ON ALL FRONTS</option>
+                            <option>STRANGLEHOLD</option>
+                            <option>YIELD NO GROUND (Imperial Knights)</option>
+                        </optgroup>
+                        <optgroup label="mission or faction specific">
+                            <option>EMPTY</option>
+                        </optgroup>
+                    </select>
+                </div>                    
+            </div>
+        </div>
+    </div>
+    <button id="readyButton">submit</button>
 
 <script type="text/javascript" src="js/index.js"></script>
 </body>
