@@ -15,8 +15,6 @@ function submitDetails() {
     let sec2Right = document.getElementById("sec2RightSelect").value
     let sec3Right = document.getElementById("sec3RightSelect").value
 
-    let title = document.getElementById("title")
-    title.addEventListener("click",refresh)
     document.getElementById("leftTeamLabel").remove()
     document.getElementById("rightTeamLabel").remove()
     document.getElementById("leftTeamName").remove()
@@ -176,10 +174,6 @@ function submitDetails() {
 
     rdyBtn.remove()
     calculateScore()
-}
-
-function refresh(){
-    window.location.reload()
 }
 
 function addSecondaries(side, name, s1, s2, s3) {
