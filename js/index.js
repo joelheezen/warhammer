@@ -14,12 +14,158 @@ function submitDetails() {
     let sec1Right = document.getElementById("sec1RightSelect").value
     let sec2Right = document.getElementById("sec2RightSelect").value
     let sec3Right = document.getElementById("sec3RightSelect").value
+    document.getElementById("leftTeamLabel").remove()
+    document.getElementById("rightTeamLabel").remove()
+    document.getElementById("leftTeamName").remove()
+    document.getElementById("rightTeamName").remove()
+
+    document.getElementById("leftNameHeader").innerHTML = `${leftName}`
+    document.getElementById("rightNameHeader").innerHTML = `${rightName}`
+
+    let cardPrimaryLeft = document.createElement("card")
+    let cardPrimaryDescLeft = document.createElement("card")
+    let cardProgressiveLeft = document.createElement("card")
+    let cardProgressiveDescLeft = document.createElement("card")
+
+    let cardPrimaryRight = document.createElement("card")
+    let cardPrimaryDescRight = document.createElement("card")
+    let cardProgressiveRight = document.createElement("card")
+    let cardProgressiveDescRight = document.createElement("card")
+
+    cardPrimaryDescLeft.classList.add("rndCard")
+    cardProgressiveDescLeft.classList.add("rndCard")
+
+    cardPrimaryDescRight.classList.add("rndCard")
+    cardProgressiveDescRight.classList.add("rndCard")
+
+    cardPrimaryLeft.innerHTML = `<h3>Primary objective</h3>`
+    cardProgressiveLeft.innerHTML = `<h3>Progressive objective</h3>`
+
+    cardPrimaryRight.innerHTML = `<h3>Primary objective</h3>`
+    cardProgressiveRight.innerHTML = `<h3>Progressive objective</h3>`
+
+    document.getElementById("leftTeamLeft").appendChild(cardPrimaryLeft)
+    document.getElementById("leftTeamLeft").appendChild(cardProgressiveLeft)
+    document.getElementById("leftTeamRight").appendChild(cardPrimaryDescLeft)
+    document.getElementById("leftTeamRight").appendChild(cardProgressiveDescLeft)
+
+    document.getElementById("rightTeamLeft").appendChild(cardPrimaryRight)
+    document.getElementById("rightTeamLeft").appendChild(cardProgressiveRight)
+    document.getElementById("rightTeamRight").appendChild(cardPrimaryDescRight)
+    document.getElementById("rightTeamRight").appendChild(cardProgressiveDescRight)
+
+    let rnd11 = document.createElement("rnd")
+    let rnd12 = document.createElement("rnd")
+    let rnd13 = document.createElement("rnd")
+    let rnd14 = document.createElement("rnd")
+    let rnd15 = document.createElement("rnd")
+
+    let rnd21 = document.createElement("rnd")
+    let rnd22 = document.createElement("rnd")
+    let rnd23 = document.createElement("rnd")
+    let rnd24 = document.createElement("rnd")
+    let rnd25 = document.createElement("rnd")
+
+    let rnd31 = document.createElement("rnd")
+    let rnd32 = document.createElement("rnd")
+    let rnd33 = document.createElement("rnd")
+    let rnd34 = document.createElement("rnd")
+    let rnd35 = document.createElement("rnd")
+
+    let rnd41 = document.createElement("rnd")
+    let rnd42 = document.createElement("rnd")
+    let rnd43 = document.createElement("rnd")
+    let rnd44 = document.createElement("rnd")
+    let rnd45 = document.createElement("rnd")
+
+    rnd11.innerHTML = `<h2>rnd1</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd12.innerHTML = `<h2>rnd2</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd13.innerHTML = `<h2>rnd3</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd14.innerHTML = `<h2>rnd4</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd15.innerHTML = `<h2>rnd5</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+
+    rnd21.innerHTML = `<h2>rnd1</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd22.innerHTML = `<h2>rnd2</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd23.innerHTML = `<h2>rnd3</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd24.innerHTML = `<h2>rnd4</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd25.innerHTML = `<h2>rnd5</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+
+    rnd31.innerHTML = `<h2>rnd1</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd32.innerHTML = `<h2>rnd2</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd33.innerHTML = `<h2>rnd3</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd34.innerHTML = `<h2>rnd4</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd35.innerHTML = `<h2>rnd5</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+
+    rnd41.innerHTML = `<h2>rnd1</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd42.innerHTML = `<h2>rnd2</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd43.innerHTML = `<h2>rnd3</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd44.innerHTML = `<h2>rnd4</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd45.innerHTML = `<h2>rnd5</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+
+    cardPrimaryDescLeft.appendChild(rnd11)
+    cardPrimaryDescLeft.appendChild(rnd12)
+    cardPrimaryDescLeft.appendChild(rnd13)
+    cardPrimaryDescLeft.appendChild(rnd14)
+    cardPrimaryDescLeft.appendChild(rnd15)
+
+    cardProgressiveDescLeft.appendChild(rnd21)
+    cardProgressiveDescLeft.appendChild(rnd22)
+    cardProgressiveDescLeft.appendChild(rnd23)
+    cardProgressiveDescLeft.appendChild(rnd24)
+    cardProgressiveDescLeft.appendChild(rnd25)
+
+    cardPrimaryDescRight.appendChild(rnd31)
+    cardPrimaryDescRight.appendChild(rnd32)
+    cardPrimaryDescRight.appendChild(rnd33)
+    cardPrimaryDescRight.appendChild(rnd34)
+    cardPrimaryDescRight.appendChild(rnd35)
+
+    cardProgressiveDescRight.appendChild(rnd41)
+    cardProgressiveDescRight.appendChild(rnd42)
+    cardProgressiveDescRight.appendChild(rnd43)
+    cardProgressiveDescRight.appendChild(rnd44)
+    cardProgressiveDescRight.appendChild(rnd45)
+    
 
     addSecondaries("left", leftName, sec1Left, sec2Left, sec3Left)
     addSecondaries("right", rightName, sec1Right, sec2Right, sec3Right)
+    console.log("added secondaries")
 
+    document.getElementById("sec1LeftSelect").remove()
+    document.getElementById("sec2LeftSelect").remove()
+    document.getElementById("sec3LeftSelect").remove()
+
+    document.getElementById("sec1LeftLabel").remove()
+    document.getElementById("sec2LeftLabel").remove()
+    document.getElementById("sec3LeftLabel").remove()
+
+    document.getElementById("sec1RightSelect").remove()
+    document.getElementById("sec2RightSelect").remove()
+    document.getElementById("sec3RightSelect").remove()
+
+    document.getElementById("sec1RightLabel").remove()
+    document.getElementById("sec2RightLabel").remove()
+    document.getElementById("sec3RightLabel").remove()
+
+    let scoreLeftDiv = document.createElement("leftScore")
+    let scoreRightDiv = document.createElement("rightScore")
+
+    let leftTeam =  document.getElementById("leftTeam")
+    let rightTeam = document.getElementById("rightTeam")
+
+    leftTeam.appendChild(scoreLeftDiv)
+    rightTeam.appendChild(scoreRightDiv)
+
+    let scoreInputs = document.querySelectorAll(".numberInput")
+
+    scoreInputs.forEach(element => {
+        element.addEventListener("input", calculateScore)
+    });
+
+    console.log(scoreInputs)
 
     rdyBtn.remove()
+    calculateScore()
 }
 
 function addSecondaries(side, name, s1, s2, s3) {
@@ -35,8 +181,6 @@ function addSecondaries(side, name, s1, s2, s3) {
     else {
         console.log("you absolute donkey, how did you manage to fuck this up?")
     }
-    leftDiv.innerHTML = ""
-    rightDiv.innerHTML = ""
     addSecondary(s1, leftDiv)
     addSecondary(s2, leftDiv)
     addSecondary(s3, leftDiv)
@@ -134,14 +278,43 @@ function addDescription(sec, div) {
     let rnd4 = document.createElement("rnd")
     let rnd5 = document.createElement("rnd")
 
-    rnd1.innerHTML = `<h2>rnd1</h2><br><br><input class="numberInput type="number" maxlength="2">`
-    rnd2.innerHTML = `<h2>rnd2</h2><br><br><input class="numberInput type="number" maxlength="2">`
-    rnd3.innerHTML = `<h2>rnd3</h2><br><br><input class="numberInput type="number" maxlength="2">`
-    rnd4.innerHTML = `<h2>rnd4</h2><br><br><input class="numberInput type="number" maxlength="2">`
-    rnd5.innerHTML = `<h2>rnd5</h2><br><br><input class="numberInput type="number" maxlength="2">`
+    rnd1.innerHTML = `<h2>rnd1</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd2.innerHTML = `<h2>rnd2</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd3.innerHTML = `<h2>rnd3</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd4.innerHTML = `<h2>rnd4</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
+    rnd5.innerHTML = `<h2>rnd5</h2><br><br><input class="numberInput type="number" maxlength="2" value="0">`
     card.appendChild(rnd1)
     card.appendChild(rnd2)
     card.appendChild(rnd3)
     card.appendChild(rnd4)
     card.appendChild(rnd5)
+}
+
+
+
+function calculateScore(){
+    let scoreLeftDiv = document.getElementsByTagName("leftScore")[0]
+    let scoreRightDiv = document.getElementsByTagName("rightScore")[0]
+
+    let leftTeam =  document.getElementById("leftTeam")
+    let rightTeam = document.getElementById("rightTeam")
+
+    let leftScoreArray = leftTeam.querySelectorAll(".numberInput")
+    let rightScoreArray = rightTeam.querySelectorAll(".numberInput")
+
+    let leftScoreTotal = 0
+    let rightScoreTotal = 0
+
+    leftScoreArray.forEach(element => {
+        leftScoreTotal += parseInt(element.value)
+    });
+
+    rightScoreArray.forEach(element => {
+        rightScoreTotal += parseInt(element.value)
+    });
+    console.log(rightScoreTotal)
+    console.log(leftScoreTotal)
+
+    scoreLeftDiv.innerHTML = `<h3>${leftScoreTotal}</h3>`
+    scoreRightDiv.innerHTML = `<h3>${rightScoreTotal}</h3>`
 }
