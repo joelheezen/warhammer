@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <title>Warhammer</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Warhammer 40K</h1>
+    <h1 id="title">Warhammer 40K</h1>
     <div id="container" class="container">
         <div id="leftTeam" class="leftTeam">
-            <label for="team" name="team" id="leftTeamLabel">Team 1:</label><input id="leftTeamName" type="text">
+            <label for="leftTeamName" name="team" id="leftTeamLabel">Team 1:</label><input id="leftTeamName" type="text">
             <h3 id="leftNameHeader"></h3>
             <div id="leftContainer">
                 <div id="leftTeamLeft">
-                    <label for="sec1LeftSelect" name="sec1Left" id="sec1LeftLabel">1st secondary:</label><br>
-                    <label for="sec2LeftSelect" name="sec2Left" id="sec2LeftLabel">2nd secondary:</label><br>
+                    <label for="sec1LeftSelect" name="sec1Left" id="sec1LeftLabel">1st secondary:</label><br class="removable"><br class="removable">
+                    <label for="sec2LeftSelect" name="sec2Left" id="sec2LeftLabel">2nd secondary:</label><br class="removable"><br class="removable">
                     <label for="sec3LeftSelect" name="sec3Left" id="sec3LeftLabel">3rd secondary:</label>
                 </div>
                 <div id="leftTeamRight">
@@ -56,7 +59,7 @@
                             <option>EMPTY</option>
                         </optgroup>
                     </select>
-                    <br>
+                    <br class="removable"><br class="removable">
                     <select id="sec2LeftSelect">
                         <optgroup label="Purge the enemy">
                             <option>ASSASSINATION</option>
@@ -95,7 +98,7 @@
                             <option>EMPTY</option>
                         </optgroup>
                     </select>
-                    <br>
+                    <br class="removable"><br class="removable">
                     <select id="sec3LeftSelect">
                         <optgroup label="Purge the enemy">
                             <option>ASSASSINATION</option>
@@ -138,13 +141,13 @@
             </div>
         </div>
         <div id="rightTeam" class="rightTeam">
-            <label for="team" name="team" id="rightTeamLabel">Team 2:</label><input id="rightTeamName" type="text">
+            <label for="rightTeamName" name="team" id="rightTeamLabel">Team 2:</label><input id="rightTeamName" type="text">
             <h3 id="rightNameHeader"></h3>
             <div id="rightContainer">
                 <div id="rightTeamLeft">
-                    <label for="sec1Right" name="sec1Right" id="sec1RightLabel">1st secondary:</label><br>
-                    <label for="sec2Right" name="sec2Right" id="sec2RightLabel">2nd secondary:</label><br>
-                    <label for="sec3Right" name="sec3Right" id="sec3RightLabel">3rd secondary:</label>
+                    <label for="sec1RightSelect" name="sec1Right" id="sec1RightLabel">1st secondary:</label><br class="removable"><br class="removable">
+                    <label for="sec2RightSelect" name="sec2Right" id="sec2RightLabel">2nd secondary:</label><br class="removable"><br class="removable">
+                    <label for="sec3RightSelect" name="sec3Right" id="sec3RightLabel">3rd secondary:</label>
                 </div>
                 <div id="rightTeamRight">
                     <select id="sec1RightSelect">
@@ -185,7 +188,7 @@
                             <option>EMPTY</option>
                         </optgroup>
                     </select>
-                    <br>
+                    <br class="removable"><br class="removable">
                     <select id="sec2RightSelect">
                         <optgroup label="Purge the enemy">
                             <option>ASSASSINATION</option>
@@ -224,7 +227,7 @@
                             <option>EMPTY</option>
                         </optgroup>
                     </select>
-                    <br>
+                    <br class="removable"><br class="removable">
                     <select id="sec3RightSelect">
                         <optgroup label="Purge the enemy">
                             <option>ASSASSINATION</option>
