@@ -124,3 +124,23 @@ h4 {
     color:blue;
 }
 
+#readyButton {
+    background-color: rgb(253, 144, 244);
+    margin-left:40vw;
+    margin-top:10vh;
+    width:20vw;
+    height:30vh;
+    font-size:20vh;
+    cursor: pointer;
+}
+
+#readyButton:hover{
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+    animation:slidebg 1s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
