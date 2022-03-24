@@ -148,6 +148,9 @@ h4 {
 #header-bar{
     display: flex;
     justify-content: space-evenly;
+    align-self:center;
+    margin-left:2.2vw ;
+    margin-right:2.2vw ;
 }
 
 #title {
