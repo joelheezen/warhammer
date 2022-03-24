@@ -143,4 +143,23 @@ h4 {
     to {
       background-position:20vw;
     }
-  }
+}
+
+#header-bar{
+    display: flex;
+}
+
+#title {
+    flex:50%;
+}
+rndBtn {
+    display:block;
+    background-color:rgba(128, 128, 128, 0.5);
+    width: 20vw;
+    height: 5vh;
+    font-size:4vh;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+}

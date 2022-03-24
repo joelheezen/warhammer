@@ -15,6 +15,7 @@ function submitDetails() {
     let sec2Right = document.getElementById("sec2RightSelect").value
     let sec3Right = document.getElementById("sec3RightSelect").value
 
+    document.getElementById("title").remove()
     document.getElementById("leftTeamLabel").remove()
     document.getElementById("rightTeamLabel").remove()
     document.getElementById("leftTeamName").remove()
@@ -169,11 +170,27 @@ function submitDetails() {
         element.remove()
     });
     
-
+    let topBar = document.getElementById("header-bar")
+    for(let i = 1; i<6; i++) {
+        let rndBtn = document.createElement("rndBtn")
+        topBar.appendChild(rndBtn)
+        rndBtn.innerHTML = `Round ${i}`
+        rndBtn.addEventListener("click", function(){toggleColour(rndBtn)})
+    }
+    
     console.log(scoreInputs)
 
     rdyBtn.remove()
     calculateScore()
+}
+
+function toggleColour(element){
+    console.log(element)
+    if(element.style.backgroundColor == "rgba(0, 128, 0, 0.5)"){
+        element.style.backgroundColor = "rgba(128, 128, 128, 0.5)"
+    } else {
+        element.style.backgroundColor= "rgba(0, 128, 0, 0.5)"
+    }
 }
 
 function addSecondaries(side, name, s1, s2, s3) {
