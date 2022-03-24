@@ -41,7 +41,7 @@ h1{
 
 
 #leftTeamLeft > card {
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 #leftTeamRight > card {
@@ -50,7 +50,7 @@ h1{
 }
 
 #rightTeamLeft > card{
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 #rightTeamRight > card{
