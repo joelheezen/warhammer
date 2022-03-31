@@ -162,6 +162,8 @@ function submitDetails() {
 
     scoreInputs.forEach(element => {
         element.addEventListener("input", calculateScore)
+        element.addEventListener("focus", function(){removeNumber(element)})
+        element.addEventListener("focusout" , function(){removeEmpty(element)})
     });
 
     let brArray = document.querySelectorAll(".removable")
@@ -315,6 +317,18 @@ function addDescription(sec, div) {
     card.appendChild(rnd5)
 }
 
+function removeNumber(e){
+    if (e.value == 0){
+        e.value = ""
+    }
+}
+
+function removeEmpty(e){
+    if (e.value == "") {
+        e.value = 0
+    }
+    calculateScore()
+}
 
 
 function calculateScore(){
