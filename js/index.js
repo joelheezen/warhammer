@@ -24,6 +24,15 @@ function submitDetails() {
     document.getElementById("leftNameHeader").innerHTML = `${leftName}`
     document.getElementById("rightNameHeader").innerHTML = `${rightName}`
 
+    let scoreLeftDiv = document.createElement("leftScore")
+    let scoreRightDiv = document.createElement("rightScore")
+
+    let leftTeam =  document.getElementById("leftTeam")
+    let rightTeam = document.getElementById("rightTeam")
+
+    leftTeam.insertBefore(scoreLeftDiv, document.getElementById("leftContainer"))
+    rightTeam.insertBefore(scoreRightDiv, document.getElementById("rightContainer"))
+
     let cardPrimaryLeft = document.createElement("card")
     let cardPrimaryDescLeft = document.createElement("card")
     let cardProgressiveLeft = document.createElement("card")
@@ -149,14 +158,7 @@ function submitDetails() {
     document.getElementById("sec2RightLabel").remove()
     document.getElementById("sec3RightLabel").remove()
 
-    let scoreLeftDiv = document.createElement("leftScore")
-    let scoreRightDiv = document.createElement("rightScore")
-
-    let leftTeam =  document.getElementById("leftTeam")
-    let rightTeam = document.getElementById("rightTeam")
-
-    leftTeam.appendChild(scoreLeftDiv)
-    rightTeam.appendChild(scoreRightDiv)
+   
 
     let scoreInputs = document.querySelectorAll(".numberInput")
 
