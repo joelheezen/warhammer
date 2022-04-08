@@ -9,17 +9,20 @@ h1{
 
 .container {
     display:flex;
-    justify-content:center;
+    justify-content:space-evenly;
+    align-self: center;
+    margin-left:1vw;
 }
 
 #leftContainer {
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .leftTeam{
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #leftTeamLeft {
@@ -34,6 +37,7 @@ h1{
 .rightTeam{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #rightTeamLeft {
@@ -111,8 +115,13 @@ h3{
     font-size:4vh;
 }
 
+#rightTeamName, #leftTeamName {
+    height:2vh;
+    align-self: center;
+}
+
 h4 {
-    padding-left: 32vw;
+    margin-left:auto;
     font-size:5vh;
     padding-top:5px;
     margin-top:0px;
@@ -120,7 +129,6 @@ h4 {
 }
 
 #rightNameHeader, #leftNameHeader {
-    padding-left:1vw;
     padding-bottom:0px;
     margin-top:5px;
     font-size:5vh;
